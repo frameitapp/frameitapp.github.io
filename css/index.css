@@ -1,0 +1,821 @@
+:root {
+    --color-base: #15171a;
+    --color-blue: #3eb0ef;
+    --color-yellow: #ffd400;
+    --color-lime: #d1ff19;
+    --color-green: #5dcf1f;
+    --color-teal: #009c7e;
+    --color-darkgrey: #343f44;
+    --color-midgrey: #738a94;
+    --color-lightgrey: #c5d2d9;
+    --color-whitegrey: #e5eff5;
+    --color-wash: #f1f2f3;
+    --color-red: #f05230;
+    --color-pink: #ff247d;
+    --color-purple: #ad26b4;
+    --font-sans-serif: "Inter",sans-serif;
+    --font-monospace: Menlo,ui-monospace,SFMono-Regular,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    --serif: Georgia,serif
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        --font-sans-serif:"Inter var",sans-serif
+    }
+}
+
+.gh-pricing-faq {
+    background: #f7fafc;
+    border-bottom: 1px solid #ecf4f8
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* nav view */
+.nav-view {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.nav-view header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 82px;
+  background: #699769;
+}
+
+.nav-view header .logo {
+  width: 160px;
+  height: 56px;
+}
+
+.hidden-tab {
+    display: none !important;
+    visibility: hidden;
+}
+
+.nav-view .tab {
+  display: flex;
+  align-items: center;   
+}
+.nav-view .tab a {
+  display: block;
+  box-sizing: border-box;
+  margin-right: 40px;
+  height: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 16px;
+}
+.nav-view .tab .commom {
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #363434;
+}
+.nav-view .tab .selected {
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  color: #396843;
+  border-bottom: 2px solid #396843;
+}
+
+.membership_documents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.membership_documents p {
+  margin-bottom: 9px;
+  width: 505px;
+  height: 25px;
+  font-size: 14px;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #030303;
+  line-height: 20px;
+}
+.membership_documents a {
+  color: #030303;
+}
+
+/* content */
+.content-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+/* header */
+.content-view header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 1920px;
+    height: 82px;
+    background: #ffffff;
+    z-index: 10;
+}
+.content-view header .logo {
+    margin-left: 388px;
+    margin-right:  388px;
+    width: 160px;
+    height: 56px;
+}
+/* tab */
+.content-view .tab {
+    display: flex;
+    align-items: center;   
+}
+.content-view .tab a {
+    display: block;
+    box-sizing: border-box;
+    margin-right: 40px;
+    height: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+}
+.content-view .tab .commom {
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    color: #363434;
+}
+.content-view .tab .selected {
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    color: #396843;
+    border-bottom: 2px solid #396843;
+}
+
+/* main */
+.content-view main {
+    padding-top: 82px;
+    width: 1920px;
+    background: #f8f8f8;
+}
+
+.banner-view {
+    background: linear-gradient(135deg, #3c6454 9%, #244839 88%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    cursor: pointer;
+}
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-text {
+    color: #f8f8f8;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 62px;
+    text-align: center;
+}
+
+.content-view main .main {
+    position: relative;
+    height: 670px;
+    min-height: 400px;
+}
+.content-view .main .logo{
+    position: absolute;
+    left: 484px;
+    top: 96px;
+    width: 207px;
+    height: 61px;
+}
+.content-view .main .intro{
+    position: absolute;
+    left: 1127px;
+    top: 10%;
+    width: auto;
+    height: 75%;
+}
+.content-view .main .title {
+    position: absolute;
+    left: 484px;
+    top: 196px;
+    height: 37px;
+    font-size: 26px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 550;
+    text-align: left;
+    color: #030303;
+    line-height: 37px;
+}
+.content-view .main .context {
+    position: absolute;
+    top: 247px;
+    left: 484px;
+    width: 416px;
+    height: 60px;
+    font-size: 14px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: left;
+    color: #030303;
+    line-height: 25px;
+}
+/* button */
+.content-view .main .button {
+    position: absolute;
+    width: 180px;
+    height: 54px;
+    cursor: pointer;
+    user-select: none;
+    background: linear-gradient(135deg,#3c6454 9%, #244839 88%);
+    border-radius: 27px;
+    box-shadow: 1px 2px 5px 0px rgba(66,66,66,0.50); 
+}
+
+.content-view .main .android {
+    top: 348px;
+    left: 684px;
+}
+.content-view .main .ios {
+    top: 348px;
+    left: 469px;
+}
+.content-view .button .icon  {
+    position: absolute;
+    top: 2px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+}
+
+.content-view .android .icon {
+    left: 11px;
+    background-image: url('../images/android.png');
+}
+.content-view .ios .icon {
+    left: 17px;
+    background-image: url('../images/ios.png');
+}
+.content-view .button .text {
+    position: absolute;
+    top: 17px;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.content-view .android .text {
+    left: 55px;
+}
+.content-view .ios .text {
+    left: 63px;
+}
+
+/* hover */
+.content-view .main .button:hover {
+    background: #ffffff;
+}
+.content-view .button:hover .icon  {
+    position: absolute;
+    top: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+.content-view .button:hover .text {
+    color: #244031;
+}
+
+.content-view .main .feature-content {
+    position: absolute;
+    width: 1920px;
+    height: 80%;
+    background: #d2ddda;
+}
+.content-view .main .func-img {
+    position: absolute;
+    top: 0;
+    height: 90%;
+}
+.content-view .main .func-img {
+    position: absolute;
+    top: 16%;
+    width: auto;
+    height: 75%;
+}
+.content-view .main .front-img {
+    left: 553px;
+}
+.content-view .main .after-img {
+    left: 1000px;
+}
+.content-view .main .func-title {
+    position: absolute;
+    top: 40%;
+    width: 400px;
+    height: 42px;
+    font-size: 30px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 550;
+    color: #030303;
+    line-height: 42px;
+}
+.content-view .main .func-intro {
+    position: absolute;
+    top: 48%;
+    width: 416px;
+    height: 60px;
+    font-size: 15px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 420;
+    text-align: left;
+    color: #030303;
+    line-height: 25px;
+}
+.content-view .main .front-intro,
+.content-view .main .front-title {
+    left: 950px;
+}
+.content-view .main .after-intro,
+.content-view .main .after-title {
+    left: 499px;
+}
+.content-view main .vision,
+.content-view main .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1920px;
+}
+.content-view .vision .vision-title,
+.content-view .contact .contact-title {
+    /* width: 120px; */
+    height: 42px;
+    font-size: 30px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 550;
+    text-align: center;
+    color: #030303;
+    line-height: 42px;
+}
+.content-view .vision .vision-intro {
+    margin-top: 73px;
+    width: 505px;
+    height: 68px;
+    font-size: 15px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    line-height: 25px;
+}
+.content-view main .vision {
+    height: 360px;
+    background: #f5f5f5;
+}
+.content-view .vision .vision-title {
+    margin-top: 72px;
+}
+.content-view main .contact {
+    height: 412px;
+    background: #d2ddda;;
+}
+.content-view .contact .contact-title {
+    margin-top: 107px;
+}
+.content-view .contact .contact-channels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 73px;
+    width: 400px;
+    height: 85px;
+}
+.content-view .contact-channels .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65px;
+    height: 85px;
+}
+.content-view .contact-channels .contact-icon {
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+
+.content-view .contact-channels .contact-cooperation {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    background: url('../images/contact3.png');
+    background-size: 54px;
+    cursor: pointer;
+}
+.content-view .contact-channels .contact-name {
+    margin-top: 9px;
+    width: 65px;
+    height: 21px;
+    user-select: none;
+    font-size: 14px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    line-height: 20px;
+}
+/* footer */
+.content-view footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 77px;
+    width: 1920px;
+    height: 260px;
+}
+.content-view footer p {
+    margin-bottom: 9px;
+    width: 505px;
+    height: 25px;
+    font-size: 14px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    line-height: 20px;
+}
+.content-view footer a {
+    color: #030303;
+}
+
+
+/* phone */
+.phone-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 375px;
+    background-color: #f8f8f8;
+}
+/* header */
+.phone-view header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.phone-view .phone-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: #ffffff;
+}
+.phone-view header .logo {
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    width: 110px;
+    height: 36px;
+    transition: all 1s;
+}
+
+.phone-view header .tabtomember {
+    position: absolute;
+    color: #3c6454;
+    height: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.phone-view header .download {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 73px;
+    height: 30px;
+    background: linear-gradient(135deg,#3c6454 9%, #244839 88%);
+    border-radius: 7px;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.50); 
+    font-size: 12px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    transition: all 1s;
+    opacity: 0;
+    pointer-events: none;
+}
+/* main */
+.phone-view main {
+    padding-top: 48px;
+    width: 100%;
+}
+
+.phone-banner-view {
+    background: linear-gradient(135deg, #3c6454 9%, #244839 88%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    cursor: pointer;
+}
+
+.phone-banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.phone-banner-text {
+    color: #f8f8f8;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.phone-view main .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 935px;
+}
+.phone-view .main .title {
+    margin-top: 22px;
+    /* width: 162px; */
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: bold;
+    text-align: left;
+    color: #030303;
+    line-height: 25px;
+}
+.phone-view .main .context {
+    margin-top: 19px;
+    width: 261px;
+    height: 39px;
+    font-size: 12px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    color: #030303;
+    line-height: 20px;
+}
+/* button */
+.phone-view .main .button {
+    position: relative;
+    width: 190px;
+    height: 54px;
+    background: linear-gradient(135deg,#3c6454 9%, #244839 88%);
+    border-radius: 27px;
+    box-shadow: 1px 2px 5px 0px rgba(66,66,66,0.50); 
+}
+.phone-view .main .android {
+    margin-top: 34px;
+    margin-bottom: 26px;
+}
+.phone-view .button img {
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+}
+.phone-view .button p {
+    position: absolute;
+    top: 17px;
+    left: 66px;
+    width: 104px;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+    line-height: 20px;
+}
+.phone-view .main .intro {
+    margin-top: 26px;
+    width: 308px;
+    height: 586px;
+}
+/* features */
+.phone-view main .tool {
+    width: 100%;
+    height: 791px;
+}
+.phone-view main .feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 667px;
+    background: #d2ddda;
+}
+.phone-view .tool .func-title {
+    margin-top: 31px;
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: bold;
+    color: #030303;
+    line-height: 25px;
+}
+.phone-view .tool .func-intro {
+    margin-top: 22px;
+    width: 261px;
+    font-size: 13px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    color: #030303;
+    line-height: 20px;
+}
+.phone-view .tool .func-img {
+    margin-top: 25px;
+    width: auto;
+    height: 586px;
+}
+
+.phone-view main .vision,
+.phone-view main .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 252px;
+}
+.phone-view main .vision {
+    background-color: #f5f5f5;
+}
+.phone-view main .contact {
+    background: #d2ddda;
+}
+.phone-view .vision .vision-title {
+    margin-top: 52px;
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: bold;
+    color: #030303;
+    line-height: 25px;
+}
+.phone-view .vision .vision-intro {
+    margin-top: 22px;
+    width: 261px;
+    font-size: 13px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    color: #030303;
+    line-height: 20px;
+}
+.phone-view .contact .contact-title {
+    margin-top: 44px;
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: bold;
+    text-align: left;
+    color: #030303;
+    line-height: 25px;
+}
+
+.phone-view .contact .contact-channels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+    width: 330px;
+}
+.phone-view .contact-channels .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65px;
+    height: 72px;
+}
+.phone-view .contact-channels .contact-icon {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+.phone-view .contact-channels .contact-name {
+    margin-top: 9px;
+    width: 65px;
+    height: 21px;
+    user-select: none;
+    font-size: 14px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    line-height: 20px;
+    width: 65px;
+}
+
+.phone-view footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+    width: 100%;
+    height: 236px;
+}
+.phone-view footer p {
+    margin-bottom: 12px;
+    width: 276px;
+    height: 17px;
+    font-size: 12px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    line-height: 17px;
+}
+.phone-view footer a {
+    color: #030303;
+}
+/* Button Style */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Card Layout */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Color Scheme */
+.primary-color {
+  color: #007bff;
+}
+
+.secondary-color {
+  color: #6c757d;
+}

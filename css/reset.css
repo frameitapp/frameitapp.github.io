@@ -1,0 +1,77 @@
+@charset "utf-8";
+html, body, div, p, div, ul, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, img, form, embed, label {
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:normal;
+}
+body {
+	font-family: arial, 'Microsoft Yahei', 'Hiragino Sans GB', sans-serif;
+	font-size:14px;
+	line-height:150%;
+	overflow:auto;
+	color:#333;
+	-webkit-tap-highlight-color: transparent;
+}
+html,body{
+	height: 100%;
+}
+a {
+	color:#0b9cd8;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+button,
+textarea,
+p,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+form,
+input,
+button,
+
+input {
+	border: none;
+}
+
+input[type=button] {
+	-webkit-appearance: none;
+	outline: none
+}
+
+textarea {
+	outline: none;
+	resize: none;
+	border: none;
+}
